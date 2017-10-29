@@ -25,7 +25,7 @@ function getRandomInt() {
 $(document).on('click','.buttonSearch', function() {
 	var type = $(this).data('type');
 	console.log(type);
-	var queryURL = 'http://api.giphy.com/v1/gifs/search?q=' + type + '&api_key=dc6zaTOxFJmzC&limit=5';
+	var queryURL = 'https://api.giphy.com/v1/gifs/search?q=' + type + '&api_key=dc6zaTOxFJmzC&limit=5';
 	$.ajax({
           url: queryURL,
           method: "GET"
