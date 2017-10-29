@@ -65,7 +65,8 @@ $(document).on('click','.searchImage', function() {
 	}
 })
 
-$('#addSearch').on('click', function() {
+$('#addSearch').on('click', function(event) {
+	event.preventDefault(); 
 	var newSearch = $('#search-input').val();
 	searchArray.push(newSearch);
 	populateButtons(searchArray, 'btn', 'btn-success', 'buttonSearch', '#button-placement');
