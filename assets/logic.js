@@ -69,6 +69,7 @@ $('#addSearch').on('click', function() {
 	var newSearch = $('#search-input').val();
 	searchArray.push(newSearch);
 	populateButtons(searchArray, 'btn', 'btn-success', 'buttonSearch', '#button-placement');
+	$('#search-input').val('');
 	return false;
 })
 
